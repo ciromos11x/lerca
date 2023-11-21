@@ -1,10 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link';
-import WhatsappIcon from '../../public/loghi/bxl-whatsapp.svg';
-import FacebookIcon from '../../public/loghi/bxl-facebook-circle.svg';
-import MailIcon from '../../public/loghi/bx-mail-send.svg';
-import  PhoneIcon  from '../../public/loghi/bxs-phone.svg';
+import WhatsappIcon from '../../../public/loghi/bxl-whatsapp.svg';
+import FacebookIcon from '../../../public/loghi/bxl-facebook-circle.svg';
+import MailIcon from '../../../public/loghi/bx-mail-send.svg';
+import  PhoneIcon  from '../../../public/loghi/bxs-phone.svg';
 
 
 
