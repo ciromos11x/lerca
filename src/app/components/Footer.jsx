@@ -10,7 +10,7 @@ const Footer = () => {
 
         <Image src="/image/logo.png" width={200} height={30} alt='logo' className="md:pr-2"/>
 
-          <div className="flex flex-col items-right place-items-end">
+          <div className="flex flex-col justify-end">
         <p className="text-black mb-2 font-sans">Tutti i diritti riservati.</p>
         <p className="text-black font-sans">Created By <Link href='https://www.linkedin.com/in/ciro-moscarella-05339024a/'><em>Moci.</em></Link></p>
         </div>
