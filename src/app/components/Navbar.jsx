@@ -17,9 +17,14 @@ const navLinks = [
     path: "#servizi",
   },
   {
+    title: "Subentri/Autoletture",
+    path: "#autoletture",
+  },
+  {
     title: "Contatti",
     path: "#contact",
   },
+
 ];
 
 const Navbar = () => {
