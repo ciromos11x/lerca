@@ -17,7 +17,7 @@ const Hero = () => {
                 <h1 className='py-3 text-5xl md:text-7xl font-bold'><span className='text-cyan-400'>Lerca</span> dal 1948</h1>
                 <h2 className='py-3 text-3xl md:text-4xl font-bold mb-2'>Via Trento 11, Foggia</h2>
                 <p className='text-2xl'>Dall &apos; esperienza del passato una garanzia per il futuro.</p>
-                <Link className='bg-cyan-400 text-center text-white rounded-xl font-bold py-3 px-6 sm:w-[60%] my-4 hover:bg-cyan-500 transition-all hover:text-2xl ' href={'#about'}>Scoprici</Link>
+                <Link className='bg-cyan-400 text-center text-white rounded-xl font-bold py-3 px-6 sm:w-[60%] my-4 hover:bg-cyan-500 transition-all hover:text-2xl ' href={'#servizi'}>Scoprici</Link>
 
                 <div className='flex flex-col  py-2 md:min-w-[400px] rounded-xl text-center mt-6 ' >
                 <div className='flex   justify-between flex-wrap   '>

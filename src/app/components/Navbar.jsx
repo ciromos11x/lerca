@@ -13,8 +13,8 @@ const navLinks = [
     path: "#about",
   },
   {
-    title: "Progetti",
-    path: "#projects",
+    title: "Servizi",
+    path: "#servizi",
   },
   {
     title: "Contatti",
