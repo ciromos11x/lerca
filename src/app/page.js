@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import HeroSection from '../components/HeroSection'
-import Navbar from '../components/Navbar'
-import About from '../components/About'
-import AccordionItem from '../components/AccordionItem'
+import Navbar from './components/Navbar'
+import HeroSection from './components/HeroSection'
+import About from './components/About'
+import AccordionItem from './components/AccordionItem'
 
 export default function Home() {
   return (
