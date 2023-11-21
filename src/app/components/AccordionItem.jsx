@@ -19,7 +19,7 @@ export default function AccordionItem() {
       </AccordionSummary>
       <AccordionDetails>
         <Typography className='text-md'>
-        Allora saprai già che questo tipo di edificio presenta un solo contatore generale di proprietà dell&apos;Ente Erogatore che registra complessivamente i consumi di acqua potabile effettuati nelle unità immobiliari esistenti nel fabbricato. Ogni unità immobiliare è fornita da uno o più contatori divisionali che registrano i consumi del singolo utente e che ha l'unico scopo di consentire una corretta suddivisione dei consumi effettuati. Letture e conteggi dei contatori divisionali Sostituzione e/o pimbatura contatori eseguiti dal nostro personale qualificato. Letture sottolettori ELETTRICI-GAS-NEXUS e di calore. Analisi acque per uso domestico. Ricerca perdite. Servizio di consulenza in materia di addebiti ed articolazione tariffaria. Ripartizioni fatture ENEL e GAS.
+        Allora saprai già che questo tipo di edificio presenta un solo contatore generale di proprietà dell&apos;Ente Erogatore che registra complessivamente i consumi di acqua potabile effettuati nelle unità immobiliari esistenti nel fabbricato. Ogni unità immobiliare è fornita da uno o più contatori divisionali che registrano i consumi del singolo utente e che ha l&apos;unico scopo di consentire una corretta suddivisione dei consumi effettuati. Letture e conteggi dei contatori divisionali Sostituzione e/o pimbatura contatori eseguiti dal nostro personale qualificato. Letture sottolettori ELETTRICI-GAS-NEXUS e di calore. Analisi acque per uso domestico. Ricerca perdite. Servizio di consulenza in materia di addebiti ed articolazione tariffaria. Ripartizioni fatture ENEL e GAS.
         </Typography>
       </AccordionDetails>
       
