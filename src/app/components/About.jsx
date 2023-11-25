@@ -24,7 +24,7 @@ export default function About() {
                 IL PERSONALE  
                 </h1>
                 <p className='flex items-center justify-center h-[300px] text-center text-md font-sans'>
-                Il personale che effettua le letture presso le abitazioni, lavorano da anni alle nostre dipendenze e sono persone qualificate, corrette e conosciute dagli utenti stessi. 
+                Il personale che effettua le letture, lavora da anni alle nostre dipendenze e sono persone qualificate, corrette e conosciute dagli utenti stessi. 
                 </p>
            </div>
            <div class="flex-1 h-[350px] whitespace-normal p-4 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6  rounded-2xl bg-gradient-to-r from-cyan-600 via-cyan-400 to-cyan-600">
