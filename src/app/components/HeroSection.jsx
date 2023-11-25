@@ -37,7 +37,7 @@ const Hero = () => {
 
             </div>
             </div>
-            <div className='pt-16'>
+            <div className=''>
                 <Image src='/image/hero.png' alt='home' width={1000} height={1000}></Image>
             </div>
         </div>
