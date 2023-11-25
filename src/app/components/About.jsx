@@ -13,7 +13,7 @@ export default function About() {
         <div class="text-black flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2 gap-10  ">
             <div class="flex-1  h-[350px] whitespace-normal p-4  sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6  rounded-2xl bg-gradient-to-r from-cyan-600 via-cyan-400 to-cyan-600">
                 <h1 className='mt-2 text-center font-bold text-lg'>
-                I SOCI 
+               SOCI 
                 </h1>     
                 <p className='flex items-center justify-center h-[300px] text-center text-md font-sans'>
                 La nostra azienda è gestita direttamente dai soci ed i rapporti, anche telefonici, dell &apos; utente sono sempre soddisfacenti e qualificati.
@@ -21,7 +21,7 @@ export default function About() {
            </div>
            <div class="flex-1 h-[350px] whitespace-normal p-4 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 rounded-2xl bg-gradient-to-r from-cyan-600 via-cyan-400 to-cyan-600">
                 <h1 className='mt-2 text-center  font-bold text-lg'>
-                IL PERSONALE  
+               PERSONALE  
                 </h1>
                 <p className='flex items-center justify-center h-[300px] text-center text-md font-sans'>
                 Il personale che effettua le letture, lavora da anni alle nostre dipendenze e sono persone qualificate, corrette e conosciute dagli utenti stessi. 
@@ -29,10 +29,10 @@ export default function About() {
            </div>
            <div class="flex-1 h-[350px] whitespace-normal p-4 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6  rounded-2xl bg-gradient-to-r from-cyan-600 via-cyan-400 to-cyan-600">
                 <h1 className='mt-2 text-center font-bold text-lg'>
-                I VANTAGGI  
+               VANTAGGI  
                 </h1>
                <p className='flex items-center justify-center h-[300px] text-center text-md font-sans'>
-             Il controllo frequente della lettura del contatore divisionale permette di rilevare tempestivamente eventuali perdite nell &apos; appartamento.
+             Il controllo frequente della lettura del contatore divisionale permette di rilevare tempestivamente eventuali perdite nell&apos;appartamento.
                 </p>
            </div>
         </div>
