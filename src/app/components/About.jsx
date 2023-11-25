@@ -4,7 +4,7 @@ import Accordion from 'react-bootstrap/Accordion';
 
 export default function About() {
   return (
-    <div id='sevizi' className=' items-center justify-center  bg-black '>
+    <div id='about' className=' items-center justify-center  bg-black '>
             <div className='text-center  p-16 rounded-lg shadow-md'>
                 <h2 className=' py-3 text-3xl text-cyan-400 md:text-4xl font-bold'>Da più di 70 anni al servizio per Foggia, Provincia e zona BAT.</h2>
                 <p className=' text-2xl mt-4 text-zinc-200 font-sans'>Nata nel 1948 la società da più di 70 anni opera nel settore della lettura,contabilizzazione dei consumi privati di acqua potabile.</p>
