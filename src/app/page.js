@@ -4,6 +4,7 @@ import HeroSection from './components/HeroSection'
 import About from './components/About'
 import AccordionItem from './components/AccordionItem'
 import Footer from './components/Footer'
+import Contact from './components/Contact'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <div className='bg-black '>
       <About />
       <AccordionItem />
+      <Contact />
       </div>
       <Footer />
    </main>
