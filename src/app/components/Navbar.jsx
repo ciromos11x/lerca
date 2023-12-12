@@ -4,6 +4,8 @@ import { useRouter } from 'next/router';
 import NavLink from './NavLink';
 import MenuOverlay from './MenuOverlay';
 import Image from 'next/image';
+import Open from '../../../public/loghi/open.svg'
+import Close from '../../../public/loghi/close.svg'
 
 const navLinks = [
   {
@@ -38,16 +40,16 @@ const Navbar = () => {
           {!navbarOpen ? (
             <button
               onClick={() => setNavbarOpen(true)}
-              className="flex item-center px-3 py-2 rounded-md border border-cyan-400 text-slate-200 hover:text-white hover:border-cyan-500"
+              className="flex item-center px-3 py-2  border-cyan-400 text-slate-200 hover:text-white hover:border-cyan-500"
             >
-              O
+              <Image src={Open} alt='openmenu' />
             </button>
           ) : (
             <button
               onClick={() => setNavbarOpen(false)}
-              className="flex items-center px-3 py-2 border border-cyan-400 rounded-md text-slate-200 hover:text-white hover:border-cyan-500"
+              className="flex items-center px-3 py-2  rounded-md text-slate-200 hover:text-white hover:border-cyan-500"
             >
-              X
+              <Image src={Close} alt='closemenu' />
             </button>
           )}
         </div>
