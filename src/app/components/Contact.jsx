@@ -30,7 +30,7 @@ export default function Contact() {
           <Link className='mx-4' href="mailto:info@lerca.it">
             <Image src={Mail} alt="Mail Icon" />
           </Link>
-          <Link className='mx-4' href="tel:0881721174">
+          <Link className='mx-4' href="tel:+390881721174">
             <Image src={Telefono} alt="Tel Icon" />
           </Link>
         </div>
