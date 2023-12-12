@@ -21,7 +21,7 @@ export default function Contact() {
         <p className='text-2xl text-zinc-200 font-sans'>Puoi conttattarci sulle nostre piattaforme social, siamo attivi dal Lunedi al Venerdi.</p>
         <p className='text-2xl text-zinc-200 font-sans'>Basta cliccare le icone qui sotto!</p>
         <div className='flex flex-row m-6 p-4 text-center justify-center items-center'  >
-        <Link className='mx-4 '  href="https://wa.me/0881721174">
+        <Link className='mx-4 '  href="https://wa.me/+390881721174">
             <Image   src={Whatsapp} alt="Whatsapp Icon" />
           </Link>
           <Link  className='mx-4' href="https://www.facebook.com/lerca.foggia.1">
@@ -30,7 +30,7 @@ export default function Contact() {
           <Link className='mx-4' href="mailto:info@lerca.it">
             <Image src={Mail} alt="Mail Icon" />
           </Link>
-          <Link className='mx-4' href="tel:+390881721174">
+          <Link className='mx-4' href="tel:+0881721174">
             <Image src={Telefono} alt="Tel Icon" />
           </Link>
         </div>
