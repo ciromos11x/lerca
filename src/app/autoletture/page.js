@@ -1,13 +1,15 @@
 "use client"
 import React from 'react'
-import Navbar from '../components/Navbar'
 import Autoletture from './Autoletture'
+import NavbarAutoletture from './NavbarAutoletture'
+import Footer from '../components/Footer'
 
-export default function auto () {
+export default function page() {
   return (
     <div>
-        <Navbar />
-        <Autoletture />
+      <NavbarAutoletture />
+        <Autoletture  />
+        <Footer />
     </div>
   )
 }

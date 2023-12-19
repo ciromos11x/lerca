@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import NavlinkSubentri from './NavlinkSubentri';
-import MenuOverlaySubentri from './MenuOverlaySubentri'
+import NavlinkAutoletture from './NavlinkAutoletture';
+import MenuOverlayAutoletture from './MenuOverlayAutoletture'
 import Image from 'next/image';
 import Open from '../../../public/loghi/open.svg'
 import Close from '../../../public/loghi/close.svg'
@@ -53,13 +53,13 @@ const Navbar = () => {
           <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
             {navLinks.map((link, index) => (
               <li key={index}>
-                <NavlinkSubentri href={link.path} title={link.title} active={router.pathname === link.path}  />
+                <NavlinkAutoletture href={link.path} title={link.title} active={router.pathname === link.path}  />
               </li>
             ))}
           </ul>
         </div>
       </div>
-      {navbarOpen ? <MenuOverlaySubentri links={navLinks} /> : null}
+      {navbarOpen ? <MenuOverlayAutoletture links={navLinks} /> : null}
     </nav>
   );
 };
