@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Link from 'next/link';
 
 const Subentri = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
@@ -72,8 +73,8 @@ const Subentri = () => {
   };
 
   return (
-    <section id="autoletture" className=" w-full md:grid-cols-2 h-screen  bg-gradient-to-b from-zinc-400 via-zinc-200 to-zinc-400 m-auto border-slate-300 py-24 gap-4">
-      <div className="text-center items-center justify-center   ">
+    <section id="autoletture" className=" w-full  md:grid-cols-2 h-screen  bg-gradient-to-b from-zinc-400 via-zinc-200 to-zinc-400 m-auto border-slate-300 py-24 gap-4">
+      <div className="text-center items-center justify-center  h-screen ">
         <h1 className='font-sans font-bold text-4xl pt-6'>Autolettura</h1>
         {emailSubmitted ? (
           <p className="text-cyan-400 text-l font-bold  mt-2">Email inviata con successo!</p>
@@ -214,6 +215,9 @@ const Subentri = () => {
                   placeholder="Lettura..."
                 />
               </div>
+            </div>
+            <div className='p-6'>
+            <Link className='bg-[#25D366] text-center text-white rounded-xl font-bold py-3 px-6 sm:w-[60%] my-4 hover:bg-[#075E54] transition-all ' href='https://wa.me/0881721174'>Oppure su whatsapp!</Link>
             </div>
             <button
               type="submit"

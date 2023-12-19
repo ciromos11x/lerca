@@ -9,7 +9,6 @@ export default function page() {
     <div>
       <NavbarAutoletture />
         <Autoletture  />
-        <Footer />
     </div>
   )
 }
