@@ -72,7 +72,7 @@ const Subentri = () => {
   };
 
   return (
-    <section id="subentri" className=" w-full md:grid-cols-2 h-screen  bg-gradient-to-b from-zinc-400 via-zinc-200 to-zinc-400 m-auto border-slate-300 py-24 gap-4">
+    <section id="autoletture" className=" w-full md:grid-cols-2 h-screen  bg-gradient-to-b from-zinc-400 via-zinc-200 to-zinc-400 m-auto border-slate-300 py-24 gap-4">
       <div className="text-center items-center justify-center   ">
         <h1 className='font-sans font-bold text-4xl pt-6'>Autolettura</h1>
         {emailSubmitted ? (
