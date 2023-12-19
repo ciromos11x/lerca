@@ -1,13 +1,15 @@
 "use client"
 import React from 'react'
 import Subentri from './Subentri'
-import Navbar from '../components/Navbar'
+import NavbarSubentri from './NavbarSubentri'
+import Footer from '../components/Footer'
 
 export default function page() {
   return (
     <div>
-        <Navbar />
-        <Subentri />
+      <NavbarSubentri />
+        <Subentri  />
+        <Footer />
     </div>
   )
 }

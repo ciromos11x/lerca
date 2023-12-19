@@ -37,9 +37,7 @@ const Hero = () => {
 
             </div>
             </div>
-            <div className='flex items-center justify-center hidden '>
-                <Image src='/image/hero.png' alt='home' width={1000} height={1000}></Image>
-            </div>
+            
         </div>
     </div>
   )
