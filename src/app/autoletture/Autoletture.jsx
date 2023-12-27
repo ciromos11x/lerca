@@ -73,14 +73,14 @@ const Subentri = () => {
   };
 
   return (
-    <section id="autoletture" className=" w-full  md:grid-cols-2 h-screen  bg-gradient-to-b from-zinc-400 via-zinc-200 to-zinc-400 m-auto border-slate-300 py-24 gap-4">
-      <div className="text-center items-center justify-center  h-screen ">
-        <h1 className='font-sans font-bold text-4xl pt-6'>Autolettura</h1>
+    <section id="autoletture" className=" w-full flex items-center justify-center  md:grid-cols-2 h-screen  bg-gradient-to-b from-zinc-400 via-zinc-200 to-zinc-400 m-auto border-slate-300 py-24 gap-4">
+      <div className="mx-auto max-w-2xl text-center bg-black  border-slate-300 rounded-xl  shadow-xxl p-12  md:grid-cols-2  md:w-full my-12 py-24 gap-4 px-8 pt-6 pb-8 mb-4">
+        <h1 className='text-white font-sans font-bold text-4xl p-6'>Autolettura</h1>
         {emailSubmitted ? (
           <p className="text-cyan-400 text-l font-bold  mt-2">Email inviata con successo!</p>
         ) : (
           <form
-            className=" max-w-[1240px] font-sans bg-black m-auto border-slate-300 rounded-xl  shadow-xxl p-12  md:grid-cols-2 my-12 md:my-12 py-24 gap-4  px-8 pt-6 pb-8 mb-4"
+            className="font-sans m-auto"
             onSubmit={handleSubmit}
           >
             <div className="mb-4 flex flex-row">

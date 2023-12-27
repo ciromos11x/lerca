@@ -5,7 +5,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 export default function AccordionItem() {
   return (
-    <div id='servizi' className='items-center  justify-center   bg-black'>
+    <div id='servizi' className='items-center  justify-center font-sans   bg-black'>
       <h1 className='py-3 text-3xl text-cyan-400 md:text-4xl font-bold m-5 mx-auto  text-center mt-8'>I Nostri Servizi.</h1>
       <div className=' max-w-[1240px] place-items-center  mx-auto border-slate-300 rounded-xl  shadow-xl p-12 '>
         
