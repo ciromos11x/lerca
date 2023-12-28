@@ -73,18 +73,18 @@ const Subentri = () => {
   };
 
   return (
-    <section id="autoletture" className=" w-full flex items-center justify-center  md:grid-cols-2 h-screen  bg-gradient-to-b from-zinc-400 via-zinc-200 to-zinc-400 m-auto border-slate-300 py-24 gap-4">
-      <div className="mx-auto max-w-2xl text-center bg-black  border-slate-300 rounded-xl  shadow-xxl p-12  md:grid-cols-2  md:w-full my-12 py-24 gap-4 px-8 pt-6 pb-8 mb-4">
-        <h1 className='text-white font-sans font-bold text-4xl p-6'>Autolettura</h1>
+    <section id="autoletture" className="w-full h-screen flex items-center justify-center bg-black">
+      <div className="grid md:grid-cols-2 mx-auto max-w-[1240px] items-center justify-center ">
+        <h1 className='text-cyan-400 font-sans font-bold text-4xl p-6'>AUTOLETTURA</h1>
         {emailSubmitted ? (
           <p className="text-cyan-400 text-l font-bold  mt-2">Email inviata con successo!</p>
         ) : (
           <form
-            className="font-sans m-auto"
+            className="flex flex-col text-center items-center w-full px-2 py-8 md:items-start "
             onSubmit={handleSubmit}
           >
-            <div className="mb-4 flex flex-row">
-              <div className='w-1/2 m-4'>
+            <div className="mb-4 flex flex-row w-full">
+              <div className='flex-1 m-4'>
                 <label
                   htmlFor="nome"
                   className="text-white block mb-2 text-sm font-medium"
@@ -100,7 +100,7 @@ const Subentri = () => {
                   placeholder="Mario Rossi"
                 />
               </div>
-              <div className='w-1/2 m-4'>
+              <div className='flex-1 m-4'>
                 <label
                   htmlFor='indirizzo'
                   className='text-white block mb-2 text-sm font-medium'>
@@ -116,8 +116,8 @@ const Subentri = () => {
                 />
               </div>
             </div>
-            <div className="mb-4 flex flex-row">
-              <div className='w-1/2 m-2'>
+            <div className="mb-4 flex flex-row w-full">
+              <div className='flex-1 m-2'>
                 <label
                   htmlFor="email"
                   className="text-white block text-sm mb-2 font-medium"
@@ -133,7 +133,7 @@ const Subentri = () => {
                   placeholder="qwerty@gmail.com"
                 />
               </div>
-              <div className='w-1/2 m-2'>
+              <div className='flex-1 m-2'>
                 <label
                   htmlFor="rif"
                   className="text-white block text-sm mb-2 font-medium"
@@ -150,8 +150,8 @@ const Subentri = () => {
                 />
               </div>
             </div>
-            <div className="mb-4 flex flex-row">
-              <div className='w-1/2 m-2'>
+            <div className="mb-4 flex flex-row w-full">
+              <div className='flex-1 m-2'>
                 <label
                   htmlFor="contatore1"
                   className="text-white block text-sm mb-2 font-medium"
@@ -167,7 +167,7 @@ const Subentri = () => {
                   placeholder="Lettura..."
                 />
               </div>
-              <div className='w-1/2 m-2'>
+              <div className='flex-1 m-2'>
                 <label
                   htmlFor="rif"
                   className="text-white block text-sm mb-2 font-medium"
@@ -183,8 +183,8 @@ const Subentri = () => {
                 />
               </div>
             </div>
-            <div className='mb-2 flex flex-row'>
-              <div className='w-1/2 m-2'>
+            <div className='mb-4 flex flex-row w-full'>
+              <div className='flex-1 m-2'>
                 <label
                   htmlFor="testo"
                   className="text-white block text-sm mb-2 font-medium"
@@ -199,12 +199,12 @@ const Subentri = () => {
                   placeholder="Messaggio opzionale.."
                 />
               </div>
-              <div className='w-1/2 m-2'>
+              <div className='flex-1 m-2'>
                 <label
                   htmlFor="img"
                   className="text-white block text-sm mb-2 font-medium"
                 >
-                  Eventuale foto contatore
+                  Ev. foto contatore
                 </label>
                 <input
                   name="img"
@@ -216,8 +216,8 @@ const Subentri = () => {
                 />
               </div>
             </div>
-            <div className='p-6'>
-            <Link className='bg-[#25D366] text-center text-white rounded-xl font-bold py-3 px-6 sm:w-[60%] my-4 hover:bg-[#075E54] transition-all ' href='https://wa.me/0881721174'>Oppure su whatsapp!</Link>
+            <div className='p-6 w-full'>
+            <Link className='bg-[#25D366] text-center mb-4   w-full text-white rounded-xl font-bold py-3 px-6 sm:w-[60%] my-4 hover:bg-[#075E54] transition-all' href='https://wa.me/0881721174'>Oppure su whatsapp!</Link>
             </div>
             <button
               type="submit"

@@ -7,8 +7,8 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white p-4 text-center">
-      <div className="flex justify-center items-center">
+    <footer className="bg-gray-900 text-white p-4 text-center">
+      <div className="flex  justify-center items-center">
         <div className="flex items-center justify-start space-x-4">
           {/* Icona Email */}
           <FontAwesomeIcon icon={faEnvelope} size="lg" />
@@ -17,10 +17,11 @@ const Footer = () => {
           <FontAwesomeIcon icon={faLinkedin} size="lg" />
           </Link>
         </div>
-        <div className="flex-grow text-center ">
-          {/* Inserisci qui il logo del sito */}
+
+       <div className="flex flex-grow text-center justify-center items-center">
         
         </div>
+
         <div className="flex items-center justify-end space-x-4">
           {/* Nome e testo copyright */}
           <div>
