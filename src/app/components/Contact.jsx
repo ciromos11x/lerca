@@ -20,6 +20,9 @@ export default function Contact() {
         </h2>
         <p className='text-2xl text-zinc-200 font-sans'>Puoi conttattarci sulle nostre piattaforme social, siamo attivi dal Lunedi al Venerdi.</p>
         <p className='text-2xl text-zinc-200 font-sans'>Basta cliccare le icone qui sotto!</p>
+        <Link className='mx-4 ' href="tel:+0881721174">
+          <h1 className='text-cyan-400 text-2xl font-bold mt-4'>0881 721174</h1>
+          </Link>
         <div className='flex flex-row m-6 p-4 text-center justify-center items-center'  >
         <Link className='mx-4 '  href="https://wa.me/+390881721174">
             <Image   src={Whatsapp} alt="Whatsapp Icon" />
@@ -32,6 +35,7 @@ export default function Contact() {
           </Link>
           <Link className='mx-4' href="tel:+0881721174">
             <Image src={Telefono} alt="Tel Icon" />
+            
           </Link>
         </div>
         </div>
