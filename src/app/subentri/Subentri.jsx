@@ -73,17 +73,17 @@ const Subentri = () => {
 
   return (
     <section id="subentri" className="w-full h-screen flex items-center justify-center bg-black">
-       <div className="grid md:grid-cols-2 mx-auto max-w-[1240px] items-center justify-center ">
+       <div className="container mx-auto grid md:grid-cols-2 items-center justify-center">
        <h1 className='text-cyan-400 font-sans font-bold text-4xl p-6 m-auto'>SUBENTRI</h1>
         {emailSubmitted ? (
           <p className="text-cyan-400 text-l font-bold  mt-2">Email inviata con successo!</p>
         ) : (
           <form
-            className="font-sans m-auto"
+            className="flex flex-col text-center items-center w-full px-2 py-8 md:items-start"
             onSubmit={handleSubmit}
           >
-            <div className="mb-4 flex flex-row">
-              <div className='w-1/2 m-4'>
+            <div className="mb-4 flex flex-row w-full">
+              <div className='flex-1 m-4'>
                 <label
                   htmlFor="nomevecchio"
                   className="text-white block mb-2 text-sm font-medium"
@@ -99,7 +99,7 @@ const Subentri = () => {
                   placeholder="Mario Rossi"
                 />
               </div>
-              <div className='w-1/2 m-4'>
+              <div className='flex-1 m-4'>
                 <label
                   htmlFor="nomenuovo"
                   className="text-white block mb-2 text-sm font-medium"
@@ -116,8 +116,8 @@ const Subentri = () => {
                 />
               </div>
             </div>
-            <div className="mb-4 flex flex-row">
-              <div className='w-1/2 m-2'>
+            <div className="mb-4 flex flex-row w-full">
+              <div className='flex-1 m-2'>
                 <label
                   htmlFor="indirizzo"
                   className="text-white block text-sm mb-2 font-medium"
@@ -133,7 +133,7 @@ const Subentri = () => {
                   placeholder="Via/Piazza..."
                 />
               </div>
-              <div className='w-1/2 m-2'>
+              <div className='flex-1 m-2'>
                 <label
                   htmlFor="letturasub"
                   className="text-white block text-sm mb-2 font-medium"
@@ -150,8 +150,8 @@ const Subentri = () => {
                 />
               </div>
             </div>
-            <div className="mb-4 flex flex-row">
-              <div className='w-full m-2'>
+            <div className="mb-4 flex flex-row w-full">
+              <div className='flex-1 m-2'>
                 <label
                   htmlFor="datasub"
                   className="text-white block text-sm mb-2 font-medium"
@@ -165,11 +165,28 @@ const Subentri = () => {
                   required
                   className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                 />
+                </div>
+                 <div className='flex-1 m-2'>
+                <label
+                  htmlFor="email"
+                  className="text-white block text-sm mb-2 font-medium"
+                >
+                  Email <span className='text-red-600'>*</span>
+                </label>
+                <input
+                  name="email"
+                  type="email"
+                  id="email"
+                  required
+                  className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                  placeholder="qwerty@gmail.com"
+                />
               </div>
+            
              
             </div>
-            <div className='mb-2 flex flex-row'>
-              <div className='w-1/2 m-2'>
+            <div className='mb-4 flex flex-row w-full'>
+              <div className='flex-1 m-2'>
                 <label
                   htmlFor="testo"
                   className="text-white block text-sm mb-2 font-medium"
@@ -184,7 +201,7 @@ const Subentri = () => {
                   placeholder="Messaggio opzionale.."
                 />
               </div>
-              <div className='w-1/2 m-2'>
+              <div className='flex-1 m-2'>
                 <label
                   htmlFor="img"
                   className="text-white block text-sm mb-2 font-medium"
@@ -201,8 +218,8 @@ const Subentri = () => {
                 />
               </div>
             </div>
-            <div className='p-6'>
-            <Link className='bg-[#25D366] text-center text-white rounded-xl font-bold py-3 px-6 sm:w-[60%] my-4 hover:bg-[#075E54] transition-all ' href='https://wa.me/0881721174'>Oppure su whatsapp!</Link>
+            <div className='p-6 w-full'>
+            <Link className='bg-[#25D366] text-center mb-4   w-full text-white rounded-xl font-bold py-3 px-6 sm:w-[60%] my-4 hover:bg-[#075E54] transition-all' href='https://wa.me/0881721174'>Oppure su whatsapp!</Link>
             </div>
             <button
               type="submit"

@@ -16,7 +16,7 @@ export async function POST(request) {
     const { nomevecchio, nomenuovo, indirizzo, letturasub, datasub, testo, img } = body;
     console.log(nomevecchio, nomenuovo, indirizzo, letturasub, datasub, testo, img,);
 
-    const subject = 'Autolettura Inviata';
+    const subject = 'Subentro Inviato';
 
     let data = {};
 
