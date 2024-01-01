@@ -13,8 +13,8 @@ export async function POST(request) {
     const body = await request.json();
     console.log("Received data:", body);
 
-    const { nome, indirizzo, email, rif, contatore1, contatore2, testo, img } = body;
-    console.log(nome, indirizzo, email, rif, contatore1, contatore2, testo, img,);
+    const { nomevecchio, nomenuovo, indirizzo, letturasub, datasub, testo, img } = body;
+    console.log(nomevecchio, nomenuovo, indirizzo, letturasub, datasub, testo, img,);
 
     const subject = 'Autolettura Inviata';
 
@@ -40,39 +40,35 @@ export async function POST(request) {
 
       data = await resend.emails.send({
         from: fromEmail,
-        to: ['ciro.moscarella@icloud.com', email],
+        to: ['ciro.moscarella@icloud.com', fromEmail],
         subject: subject,
         react: (
           <div style={{ backgroundColor:'	#FFFFFF', padding: '20px' }}> 
             <h1 style={{ color: '#333', fontSize: '24px', fontWeight: 'bold' }}>
-              Grazie per aver comunicato la tua autolettura!
+              Grazie per aver comunicato la tua voltura!
             </h1>
 
-            <p className="text-xl">Abbiamo ricevuto la vostra autolettura, questa verrà memorizzata nel nostro database al più presto. Grazie mille.</p>
+            <p className="text-xl">Abbiamo ricevuto la vostra voltura, questa verrà memorizzata nel nostro database al più presto. Grazie mille.</p>
             <table style={{ borderCollapse: 'collapse', width: '100%', marginTop: '20px', border: '2px solid #ddd' }}>
               <tr>
-                <th style={{ border: '2px solid #ddd', padding: '8px', textAlign: 'left' }}>Nome e Cognome</th>
-                <td style={{ border: '2px solid #ddd', padding: '8px', textAlign: 'left' }}>{nome}</td>
+                <th style={{ border: '2px solid #ddd', padding: '8px', textAlign: 'left' }}>Nome Vecchio</th>
+                <td style={{ border: '2px solid #ddd', padding: '8px', textAlign: 'left' }}>{nomevecchio}</td>
+              </tr>
+              <tr>
+                <th style={{ border: '2px solid #ddd', padding: '8px', textAlign: 'left' }}>Nome Nuovo</th>
+                <td style={{ border: '2px solid #ddd', padding: '8px', textAlign: 'left' }}>{nomenuovo}</td>
               </tr>
               <tr>
                 <th style={{ border: '2px solid #ddd', padding: '8px', textAlign: 'left' }}>Indirizzo</th>
                 <td style={{ border: '2px solid #ddd', padding: '8px', textAlign: 'left' }}>{indirizzo}</td>
               </tr>
               <tr>
-                <th style={{ border: '2px solid #ddd', padding: '8px', textAlign: 'left' }}>Email</th>
-                <td style={{ border: '2px solid #ddd', padding: '8px', textAlign: 'left' }}>{email}</td>
+                <th style={{ border: '2px solid #ddd', padding: '8px', textAlign: 'left' }}>Data di Subentro</th>
+                <td style={{ border: '2px solid #ddd', padding: '8px', textAlign: 'left' }}>{datasub}</td>
               </tr>
               <tr>
-                <th style={{ border: '2px solid #ddd', padding: '8px', textAlign: 'left' }}>Riferimento</th>
-                <td style={{ border: '2px solid #ddd', padding: '8px', textAlign: 'left' }}>{rif}</td>
-              </tr>
-              <tr>
-                <th style={{ border: '2px solid #ddd', padding: '8px', textAlign: 'left' }}>Lettura contatore 1</th>
-                <td style={{ border: '2px solid #ddd', padding: '8px', textAlign: 'left' }}>{contatore1}</td>
-              </tr>
-              <tr>
-                <th style={{ border: '2px solid #ddd', padding: '8px', textAlign: 'left' }}>Lettura contatore 2</th>
-                <td style={{ border: '2px solid #ddd', padding: '8px', textAlign: 'left' }}>{contatore2}</td>
+                <th style={{ border: '2px solid #ddd', padding: '8px', textAlign: 'left' }}>Lettura di Subentro</th>
+                <td style={{ border: '2px solid #ddd', padding: '8px', textAlign: 'left' }}>{letturasub}</td>
               </tr>
               <tr>
                 <th style={{ border: '2px solid #ddd', padding: '8px', textAlign: 'left' }}>Messaggio</th>

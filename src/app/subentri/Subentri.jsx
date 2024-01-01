@@ -18,12 +18,11 @@ const Subentri = () => {
 
     try {
       const data = {
-        nome: e.target.nome.value,
+        nomevecchio: e.target.nomevecchio.value,
+        nomenuovo: e.target.nomenuovo.value,
         indirizzo: e.target.indirizzo.value,
-        email: e.target.email.value,
-        rif: e.target.rif.value,
-        contatore1: e.target.contatore1.value,
-        contatore2: e.target.contatore2.value,
+        letturasub: e.target.letturasub.value,
+        datasub: e.target.datasub.value,
         testo: e.target.testo.value,
       };
 
@@ -43,7 +42,7 @@ const Subentri = () => {
         data.img = imgData;
       }
 
-      const endpoint = '/api/send';
+      const endpoint = '/api/send/subentri';
 
       const options = {
         method: 'POST',
@@ -73,9 +72,9 @@ const Subentri = () => {
   };
 
   return (
-    <section id="subentri" className=" w-full flex items-center justify-center  md:grid-cols-2 h-screen  bg-gradient-to-b from-zinc-400 via-zinc-200 to-zinc-400 m-auto border-slate-300 py-24 gap-4">
-      <div className="mx-auto max-w-2xl text-center bg-black  border-slate-300 rounded-xl  shadow-xxl p-12  md:grid-cols-2  md:w-full my-12 py-24 gap-4 px-8 pt-6 pb-8 mb-4">
-        <h1 className='text-white font-sans font-bold text-4xl p-6'>Subentri</h1>
+    <section id="subentri" className="w-full h-screen flex items-center justify-center bg-black">
+       <div className="grid md:grid-cols-2 mx-auto max-w-[1240px] items-center justify-center ">
+       <h1 className='text-cyan-400 font-sans font-bold text-4xl p-6 m-auto'>SUBENTRI</h1>
         {emailSubmitted ? (
           <p className="text-cyan-400 text-l font-bold  mt-2">Email inviata con successo!</p>
         ) : (
@@ -154,15 +153,15 @@ const Subentri = () => {
             <div className="mb-4 flex flex-row">
               <div className='w-full m-2'>
                 <label
-                  htmlFor="data"
+                  htmlFor="datasub"
                   className="text-white block text-sm mb-2 font-medium"
                 >
                   Data di Subentro <span className='text-red-600'>*</span>
                 </label>
                 <input
-                  name="data"
+                  name="datasub"
                   type="date"
-                  id="data"
+                  id="datasub"
                   required
                   className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                 />

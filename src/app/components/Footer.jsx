@@ -1,7 +1,7 @@
 // components/Footer.js
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import {  faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -11,7 +11,8 @@ const Footer = () => {
       <div className="flex  justify-center items-center">
         <div className="flex items-center justify-start space-x-4">
           {/* Icona Email */}
-          <FontAwesomeIcon icon={faEnvelope} size="lg" />
+        
+        
           {/* Icona LinkedIn */}
           <Link href='https://it.linkedin.com/in/ciro-moscarella-05339024a' blank>
           <FontAwesomeIcon icon={faLinkedin} size="lg" />
