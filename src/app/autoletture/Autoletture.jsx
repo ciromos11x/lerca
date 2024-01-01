@@ -43,7 +43,7 @@ const Subentri = () => {
         data.img = imgData;
       }
 
-      const endpoint = '/api/send';
+      const endpoint = '/api/send/autoletture';
 
       const options = {
         method: 'POST',
