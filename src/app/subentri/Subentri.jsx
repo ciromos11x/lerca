@@ -74,7 +74,7 @@ const Subentri = () => {
   return (
     <section id="subentri" className="w-full h-screen flex items-center justify-center bg-black m-auto">
        <div className="container mx-auto grid md:grid-cols-2 items-center justify-center m-auto">
-       <h1 className='text-cyan-400 font-sans font-bold text-4xl p-6 m-auto '>SUBENTRI</h1>
+       <h1 className='text-cyan-400 font-sans font-bold text-4xl p-6 m-auto mt-6 '>SUBENTRI</h1>
         {emailSubmitted ? (
           <p className="text-cyan-400 text-l font-bold  mt-2">Email inviata con successo!</p>
         ) : (
