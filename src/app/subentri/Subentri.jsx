@@ -73,8 +73,8 @@ const Subentri = () => {
 
   return (
     <section id="subentri" className="w-full h-screen flex items-center justify-center bg-black m-auto">
-       <div className="container mx-auto grid md:grid-cols-2 items-center justify-center m-auto">
-       <h1 className='text-cyan-400 font-sans font-bold text-4xl p-6 m-auto mt-6 '>SUBENTRI</h1>
+       <div className="grid md:grid-cols-2 mx-auto max-w-[1240px] items-center justify-center m-auto">
+       <h1 className='text-cyan-400 font-sans font-bold text-4xl p-6 m-auto text-center items-center justify-center'>SUBENTRI</h1>
         {emailSubmitted ? (
           <p className="text-cyan-400 text-l font-bold  mt-2">Email inviata con successo!</p>
         ) : (
@@ -83,12 +83,12 @@ const Subentri = () => {
             onSubmit={handleSubmit}
           >
             <div className="mb-4 flex flex-row w-full">
-              <div className='flex-1 m-4'>
+              <div className='flex-1 m-2'>
                 <label
                   htmlFor="nomevecchio"
                   className="text-white block mb-2 text-sm font-medium"
                 >
-                  Nome e Cognome vecchio proprietario<span className='text-red-600'>*</span>
+                  Nome e Cogn. vecchio proprietario<span className='text-red-600'>*</span>
                 </label>
                 <input
                   name="nomevecchio"
@@ -99,12 +99,12 @@ const Subentri = () => {
                   placeholder="Mario Rossi"
                 />
               </div>
-              <div className='flex-1 m-4'>
+              <div className='flex-1 m-2'>
                 <label
                   htmlFor="nomenuovo"
                   className="text-white block mb-2 text-sm font-medium"
                 >
-                  Nome e Cognome nuovo proprietario<span className='text-red-600'>*</span>
+                  Nome e Cogn. nuovo proprietario<span className='text-red-600'>*</span>
                 </label>
                 <input
                   name="nomenuovo"
