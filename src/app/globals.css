@@ -2,3 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* styles/global.css */
+
+/* styles/global.css */
+
+/* Applica lo stile quando il dispositivo è in modalità landscape */
+@media screen and (orientation: landscape) {
+    html, body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      overflow: hidden;
+    }
+  
+    #__next {
+      height: 100%;
+      width: 100%;
+      overflow: auto; /* Per consentire lo scrolling se il contenuto è più grande dello schermo */
+    }
+  }
+  
