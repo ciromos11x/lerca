@@ -1,0 +1,11 @@
+/* styles/globals.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Aggiungi stili globali personalizzati qui */
+
+body {
+  /* Esempio: Imposta uno sfondo globale per il corpo */
+  background-color: #000000;
+}
