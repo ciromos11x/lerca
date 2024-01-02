@@ -72,7 +72,7 @@ const Subentri = () => {
   };
 
   return (
-    <section id="subentri" className="w-full h-screen flex items-center justify-center bg-black m-auto">
+    <section id="subentri" className="w-full h-screen flex items-center justify-center bg-black mx-auto">
        <div className="grid md:grid-cols-2 mx-auto max-w-[1240px] items-center justify-center m-auto">
        <h1 className='text-cyan-400 font-sans font-bold text-4xl p-6 m-auto text-center items-center justify-center'>SUBENTRI</h1>
         {emailSubmitted ? (
