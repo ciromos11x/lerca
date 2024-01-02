@@ -10,6 +10,16 @@ import AccordionItem from './components/AccordionItem';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
 
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: 1,
+  // Also supported by less commonly used
+  // interactiveWidget: 'resizes-visual',
+}
+
 export default function Home() {
   return (
     <div>
