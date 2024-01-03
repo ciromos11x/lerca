@@ -57,3 +57,26 @@ body {
   line-height: 1.6;
   color: #333;
 }
+
+/* globals.css o stili direttamente nel componente Subentri */
+
+  @media screen and (orientation: landscape) {
+    #subentri {
+      max-width: 100%;
+      margin: 0 auto;
+      height: 200vh;
+    }
+  
+    #subentri form {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    #autoletture {
+        height: 200vh;
+    }
+
+    #home {
+        height: 150vh;
+    }
+  }

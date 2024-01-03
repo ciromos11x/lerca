@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Come() {
   return (
-    <section id="come" className="text-white w-full flex flex-col md:flex-row items-center justify-center bg-black py-12 md:py-24 gap-4">
+    <section id="come" className="text-white w-full min-h-screen flex flex-col md:flex-row items-center justify-center bg-black py-12 md:py-24 gap-4">
         <div className='text-center md:text-left md:w-1/2 p-6'>
             <h1 className='text-cyan-400 font-sans font-bold text-4xl mb-4'>Come leggere il contatore dell’acqua</h1>
             <div className=''>
