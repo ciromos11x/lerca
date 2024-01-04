@@ -37,23 +37,18 @@ const Navbar = () => {
           <Image src="/image/logob.png" alt="logo" width={150} height={150} />
         </Link>
         <div className="mobile-menu block md:hidden">
-          {!navbarOpen ? (
-            <button
-              onClick={() => setNavbarOpen(true)}
-              className="flex item-center px-3 py-2  border-cyan-400 text-slate-200 hover:text-white hover:border-cyan-500"
-            >
-              <Image src={Open} alt='openmenu' />
-            </button>
-          ) : (
-            <button
-              onClick={() => setNavbarOpen(false)}
-              className="flex items-center px-3 py-2  rounded-md text-slate-200 hover:text-white hover:border-cyan-500"
-            >
+          <button
+            onClick={() => setNavbarOpen(!navbarOpen)}
+            className="flex item-center px-3 py-2  border-cyan-400 text-slate-200 hover:text-white hover:border-cyan-500"
+          >
+            {navbarOpen ? (
               <Image src={Close} alt='closemenu' />
-            </button>
-          )}
+            ) : (
+              <Image src={Open} alt='openmenu' />
+            )}
+          </button>
         </div>
-        <div className="menu hidden md:block md:w-auto" id="navbar">
+        <div className={`menu ${navbarOpen ? 'block' : 'hidden'} md:block md:w-auto`} id="navbar">
           <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
             {navLinks.map((link, index) => (
               <li key={index}>
@@ -63,7 +58,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-      {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
+      {navbarOpen ? <MenuOverlay links={navLinks} onClose={() => setNavbarOpen(false)} /> : null}
     </nav>
   );
 };

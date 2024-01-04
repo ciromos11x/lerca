@@ -11,42 +11,43 @@ const iframe = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3
 
 export default function Contact() {
   return (
-    <div name='contact' className="flex flex-col ">
-      <div className="w-full p-4 m-auto ">
+    <div name='contact' className="flex flex-col">
+      <div className="w-full p-4 m-auto">
         {/* Contenuto della prima colonna */}
-        <div className=" p-4  text-center justify-center items-center">
-        <h2 className=' py-3 mb-4 text-3xl text-cyan-400 md:text-4xl font-bold'>
+        <div className="p-4 text-center justify-center items-center">
+          <h2 className='py-3 mb-4 text-3xl text-cyan-400 md:text-4xl font-bold'>
             Contatti
-        </h2>
-        <p className='text-2xl text-zinc-200 font-sans'>Puoi conttattarci sulle nostre piattaforme social, siamo attivi dal Lunedi al Venerdi.</p>
-        <p className='text-2xl text-zinc-200 font-sans'>Basta cliccare le icone qui sotto!</p>
-        <Link className='mx-4 ' href="tel:+0881721174">
-          <h1 className='text-cyan-400 text-2xl font-bold mt-4'>0881 721174</h1>
-          </Link>
-        <div className='flex flex-row m-6 p-4 text-center justify-center items-center'  >
-        <Link className='mx-4 '  href="https://wa.me/+390881721174">
-            <Image   src={Whatsapp} alt="Whatsapp Icon" />
-          </Link>
-          <Link  className='mx-4' href="https://www.facebook.com/lerca.foggia.1">
-            <Image  src={Facebook} alt="Facebook Icon" />
-          </Link>
-          <Link className='mx-4' href="mailto:info@lerca.it">
-            <Image src={Mail} alt="Mail Icon" />
-          </Link>
+          </h2>
+          <p className='text-2xl text-zinc-200 font-sans'>Puoi contattarci sulle nostre piattaforme social, siamo attivi dal Lunedi al Venerdi.</p>
+          <p className='text-2xl text-zinc-200 font-sans'>Basta cliccare le icone qui sotto!</p>
           <Link className='mx-4' href="tel:+0881721174">
-            <Image src={Telefono} alt="Tel Icon" />
-            
+            <h1 className='text-cyan-400 text-2xl font-bold mt-4'>0881 721174</h1>
           </Link>
-        </div>
+          <div className='flex flex-row m-6 p-4 text-center justify-center items-center'>
+            <Link className='mx-4' href="https://wa.me/+390881721174">
+              <Image src={Whatsapp} alt="Whatsapp Icon" />
+            </Link>
+            <Link className='mx-4' href="https://www.facebook.com/lerca.foggia.1">
+              <Image src={Facebook} alt="Facebook Icon" />
+            </Link>
+            <Link className='mx-4' href="mailto:info@lerca.it">
+              <Image src={Mail} alt="Mail Icon" />
+            </Link>
+            <Link className='mx-4' href="tel:+0881721174">
+              <Image src={Telefono} alt="Tel Icon" />
+            </Link>
+          </div>
         </div>
       </div>
       <div className="m-auto">
         {/* Contenuto della seconda colonna */}
-        <div className='text-center justify-center items-center mb-4' >
-        <h2 className=' py-3 mb-4 text-3xl text-cyan-400 md:text-4xl font-bold'>
+        <div className='text-center justify-center items-center mb-4'>
+          <h2 className='py-3 mb-4 text-3xl text-cyan-400 md:text-4xl font-bold'>
             Dove siamo?
-        </h2>
-        <div className='m-4 flex items-center justify-center border rounded-md' dangerouslySetInnerHTML={{ __html: iframe }} />
+          </h2>
+          <div className='mappa m-4 iframe-container'>
+            <div dangerouslySetInnerHTML={{ __html: iframe }} />
+          </div>
         </div>
       </div>
     </div>

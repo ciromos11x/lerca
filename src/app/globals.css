@@ -61,3 +61,28 @@ body {
 /* globals.css o stili direttamente nel componente Subentri */
 
   
+@media (max-width: 767px) {
+    /* Stili per dispositivi con larghezza massima di 767px */
+    #home {
+      /* Aggiungi stili specifici per dispositivi mobili */
+    }
+  
+    
+
+    /* Aggiungi questa regola CSS */
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%; /* Imposta l'aspect ratio della mappa (9:16) */
+  }
+  
+  .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  
+  }

@@ -18,11 +18,9 @@ export default function Home() {
     <div>
       <Navbar />
       <HeroSection />
-      <div className='bg-black'>
         <About />
         <AccordionItem />
         <Contact />
-      </div>
       <Footer />
     </div>
   );
