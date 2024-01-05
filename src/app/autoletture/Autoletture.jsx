@@ -73,7 +73,7 @@ const Subentri = () => {
   };
 
   return (
-    <section id="autoletture" className="w-full min-h-screen h-screen flex items-center justify-center bg-black md:items-center mt-16">
+    <section id="autoletture" className="w-full min-h-screen h-screen flex items-center justify-center bg-black md:items-center ">
       <div className="grid md:grid-cols-2 mx-auto max-w-[1240px] items-center justify-center m-auto">
         <h1 className='text-cyan-400 font-sans font-bold text-4xl p-6 m-auto text-center items-center justify-center'>AUTOLETTURA</h1>
         {emailSubmitted ? (

@@ -74,7 +74,7 @@ const Subentri = () => {
   return (
     <section
       id="subentri"
-      className="w-full min-h-screen flex items-center justify-center bg-black mt-16"
+      className="w-full min-h-screen flex items-center justify-center bg-black"
     >
       <div className="grid md:grid-cols-2 mx-auto max-w-[1240px] items-center justify-center m-auto">
         <h1 className="text-cyan-400 font-sans font-bold text-4xl p-6 m-auto text-center md:text-left">
