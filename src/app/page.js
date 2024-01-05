@@ -15,7 +15,7 @@ import Contact from './components/Contact';
 
 export default function Home() {
   return (
-    <div>
+    <div className='bg-black'> 
       <Navbar />
       <HeroSection />
         <About />

@@ -6,7 +6,7 @@ import Footer from '../components/Footer'
 
 export default function page() {
     return (
-      <div>
+      <div >
             <>
             <NavbarSubentri />
             <Subentri />

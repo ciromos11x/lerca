@@ -11,7 +11,7 @@ const iframe = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3
 
 export default function Contact() {
   return (
-    <div name='contact' className="flex flex-col">
+    <div name='contact' className="flex flex-col bg-black">
       <div className="w-full p-4 m-auto">
         {/* Contenuto della prima colonna */}
         <div className="p-4 text-center justify-center items-center">
