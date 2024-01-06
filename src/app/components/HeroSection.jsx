@@ -10,8 +10,8 @@ import  PhoneIcon  from '../../../public/loghi/bxs-phone.svg';
 
 const Hero = () => {
   return (
-    <div id='home' className='w-full h-screen flex items-center bg-gradient-to-b from-zinc-400 via-zinc-200 to-zinc-400 m-auto border-slate-300 flex-col justify-between'>
-    <div className='h-screen grid md:grid-cols-2 mx-auto max-w-[1240px] '>
+    <div id='home' currentPath="/home" className='w-full h-screen flex items-center bg-gradient-to-b from-zinc-400 via-zinc-200 to-zinc-400 m-auto border-slate-300 flex-col justify-between'>
+    <div className='h-screen grid md:grid-cols-2 mx-auto max-w-[1240px]  '>
       <div className='flex flex-col font-sans justify-center md:items-start w-full px-2 py-6'>
         <p className='text-2xl font-bold'>Lettura & Riparazioni Contatori Acqua</p>
         <h1 className='py-2 text-5xl md:text-7xl font-bold'><span className='text-cyan-400'>Lerca</span> dal 1948</h1>

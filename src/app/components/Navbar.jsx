@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 import NavLink from './NavLink';
 import MenuOverlay from './MenuOverlay';
 import Image from 'next/image';
@@ -26,13 +26,24 @@ const navLinks = [
   },
 ];
 
-const Navbar = () => {
-  const router = useRouter;
+const Navbar = ({ currentPath }) => {
   const [navbarOpen, setNavbarOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState('');
+
+  useEffect(() => {
+    // Imposta il link attivo in base al percorso corrente passato come prop
+    setActiveLink(currentPath);
+  }, [currentPath]);
+
+  const handleLinkClick = (link) => {
+    setActiveLink(link);
+    setNavbarOpen(false); // Chiudi la navbar dopo aver cliccato su un link
+  };
+
 
   return (
     <nav className="fixed mx-auto bg-gray-900 top-0 left-0 right-0 z-10 text-center shadow-xl">
-      <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
+    <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link href="/" passHref className="text-2xl md:text-5xl text-black font-semibold">
           <Image src="/image/logob.png" alt="logo" width={150} height={150} />
         </Link>
