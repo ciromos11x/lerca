@@ -73,14 +73,21 @@ const Subentri = () => {
   };
 
   return (
-    <section id="autoletture" className="w-full min-h-screen h-screen flex items-center justify-center bg-black md:items-center ">
+    <section
+      id="autoletture"
+      className="w-full min-h-screen flex items-center justify-center bg-black"
+    >
       <div className="grid md:grid-cols-2 mx-auto max-w-[1240px] items-center justify-center m-auto">
-        <h1 className='text-cyan-400 font-sans font-bold text-4xl p-6 m-auto text-center items-center justify-center'>AUTOLETTURA</h1>
+        <h1 className="text-cyan-400 font-sans font-bold text-4xl p-6 m-auto text-center md:text-left">
+         AUTOLETTURA
+        </h1>
         {emailSubmitted ? (
-          <p className="text-cyan-400 text-l font-bold  mt-2">Email inviata con successo!</p>
+          <p className="text-cyan-400 text-l font-bold mt-2">
+            Email inviata con successo!
+          </p>
         ) : (
           <form
-            className="flex flex-col text-center items-center w-full px-2 py-8 md:items-start "
+            className="flex flex-col text-center items-center w-full px-2 py-8 md:items-start"
             onSubmit={handleSubmit}
           >
             <div className="mb-4 flex flex-row w-full">

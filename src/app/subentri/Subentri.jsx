@@ -89,8 +89,8 @@ const Subentri = () => {
             className="flex flex-col text-center items-center w-full px-2 py-8 md:items-start"
             onSubmit={handleSubmit}
           >
-            <div className="mb-4 flex flex-col md:flex-row w-full">
-              <div className="flex-1 m-2">
+            <div className="mb-4 flex flex-row w-full">
+              <div className="flex-1 m-4">
                 <label
                   htmlFor="nomevecchio"
                   className="text-white block mb-2 text-sm font-medium"
@@ -106,7 +106,7 @@ const Subentri = () => {
                   placeholder="Mario Rossi"
                 />
               </div>
-              <div className="flex-1 m-2">
+              <div className="flex-1 m-4">
                 <label
                   htmlFor="nomenuovo"
                   className="text-white block mb-2 text-sm font-medium"
@@ -123,8 +123,8 @@ const Subentri = () => {
                 />
               </div>
             </div>
-            <div className="mb-4 flex flex-col md:flex-row w-full">
-              <div className="flex-1 m-2">
+            <div className="mb-4 flex flex-row w-full">
+              <div className="flex-1 m-4">
                 <label
                   htmlFor="indirizzo"
                   className="text-white block text-sm mb-2 font-medium"
@@ -140,7 +140,7 @@ const Subentri = () => {
                   placeholder="Via/Piazza..."
                 />
               </div>
-              <div className="flex-1 m-2">
+              <div className="flex-1 m-4">
                 <label
                   htmlFor="letturasub"
                   className="text-white block text-sm mb-2 font-medium"
@@ -157,8 +157,8 @@ const Subentri = () => {
                 />
               </div>
             </div>
-            <div className="mb-4 flex flex-col md:flex-row w-full">
-              <div className="flex-1 m-2">
+            <div className="mb-4 flex flex-row w-full">
+              <div className="flex-1 m-4">
                 <label
                   htmlFor="datasub"
                   className="text-white block text-sm mb-2 font-medium"
@@ -173,7 +173,7 @@ const Subentri = () => {
                   className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                 />
               </div>
-              <div className="flex-1 m-2">
+              <div className="flex-1 m-4">
                 <label
                   htmlFor="email"
                   className="text-white block text-sm mb-2 font-medium"
@@ -190,8 +190,8 @@ const Subentri = () => {
                 />
               </div>
             </div>
-            <div className="mb-4 flex flex-col md:flex-row w-full">
-              <div className="flex-1 m-2">
+            <div className="mb-4 flex flex-row w-full">
+              <div className="flex-1 m-4">
                 <label
                   htmlFor="testo"
                   className="text-white block text-sm mb-2 font-medium"
@@ -206,7 +206,7 @@ const Subentri = () => {
                   placeholder="Messaggio opzionale.."
                 />
               </div>
-              <div className="flex-1 m-2">
+              <div className="flex-1 m-4">
                 <label
                   htmlFor="img"
                   className="text-white block text-sm mb-2 font-medium"
