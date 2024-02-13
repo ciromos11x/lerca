@@ -42,10 +42,10 @@ const Navbar = ({ currentPath }) => {
 
 
   return (
-    <nav className="fixed mx-auto bg-gray-900 top-0 left-0 right-0 z-10 text-center shadow-xl">
+    <nav className="fixed mx-auto bg-black top-0 left-0 right-0 z-10 text-center shadow-xl">
     <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link href="/" passHref className="text-2xl md:text-5xl text-black font-semibold">
-          <Image src="/image/logob.png" alt="logo" width={150} height={150} />
+          <h1 className=' text-sm  font-sans text-white'>LERCA</h1>
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
@@ -68,7 +68,7 @@ const Navbar = ({ currentPath }) => {
           <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
             {navLinks.map((link, index) => (
               <li key={index}>
-                <NavLink href={link.path} title={link.title} />
+                <NavLink href={link.path} title={link.title}></NavLink>
               </li>
             ))}
           </ul>

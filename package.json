@@ -39,7 +39,7 @@
     "autoprefixer": "^10.4.16",
     "eslint": "^8",
     "eslint-config-next": "14.0.3",
-    "framer-motion": "^10.16.1",
+    "framer-motion": "^10.17.9",
     "next": "13.4.16",
     "postcss": "^8.4.32",
     "react": "^18.2.0",
